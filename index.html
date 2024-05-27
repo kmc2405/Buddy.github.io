@@ -5,27 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buddy.</title>
     <link rel="stylesheet" href="./css.css">
+    <link rel="icon" href="./img/web_icon.png">
 </head>
 <body>
-<header>
-    <div id="logo">
-        <a href="./index.html"><img src='./img/logo.png' width='150'></a>
-    </div>
-    <ul id="main_menu">
-        <li>video</li>
-        <li>plan</li>
-        <li>design</li>
-        <li>service</li>
-    </ul>
-    </div>
-</header>
-<div id="container">
-    <img src='./img/main_senior.jpeg' width='100%'>
-    <h1>친구처럼 친근하게<br>
-        Buddy!</h1>
+<div id="wrap">
+    <header>
+        <div id="logo">
+            <a href="./index.html"><img id="logo_img" src='./img/logo.png' width='150'></a>
+        </div>
+        <nav class="main_menu">
+            <ul>
+                <a href="./#" class="scroll"><li>video</li></a>
+                <a href="./#"><li>intro</li></a>
+                <a href="./#"><li>design</li></a>
+                <a href="./#"><li>service</li></a>
+            </ul>
+        </nav>
+    </header> <!--header-->
+    <div class="section_0">
+    <video id="bg_video" autoplay loop muted>
+        <source src="./video/intro.mp4" type="video/mp4">
+    </video>
+    <p class="ani_1">오래된 친구처럼 <span class="style_1">친근하게</span></p><br>
+    <p class="ani_2">그리고 <span class="style_2">트렌디</span>를 넘어서...</p>
     <img class='img_1'src='./img/scroll_icon.png'>
+    </div>
+    <div class="clear"></div>
+
+    <div class="section_1">
+        <video width="1600" height="900" controls muted>
+            <source src="./video/intro.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="clear"></div>
+
+    <div class="section_2">
+        <div id="bg_img">
+        <p class="title">"지혜와 경험이 꽃피는 황금기,<br>
+                <span>당신의 삶을 더욱 찬란하게!"</span></p>
+        <p> 트렌디 시니어 서비스는 당신의 소중한 시간을 더욱 가치 있게 만듭니다.<br>
+            오랜 세월 쌓아온 지혜와 경험을 바탕으로 새로운 도전과 즐거움을 선사합니다.<br>
+            건강과 행복을 최우선으로 고려한 맞춤형 프로그램, 최신 트렌드를 반영한 라이프스타일 제안,<br>
+            그리고 당신의 이야기를 존중하는 따뜻한 소통.</p>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="section_3">
+        <article class="design_0">
+        <p class="title">"트렌디함을 넘어서 이젠 <span>독창적인</span>"</p>
+        <div class="box">
+            <p>text   text   text   text   text   text   text</p>
+        </div>
+        </article>
+    </div>
 </div>
-<div class="content_video">video</div>
+</div>
 
 
 
@@ -33,5 +67,10 @@
 <footer>
 
 </footer>
+
+<script src="./js.js">
+</script>
+
+
 </body>
 </html>
