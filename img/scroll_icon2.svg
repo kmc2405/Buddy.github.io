@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 123.79 103.56">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 8px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: ArialRoundedMTBold, 'Arial Rounded MT Bold';
+        font-size: 30px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_4" data-name="Layer 4">
+    <text class="cls-2" transform="translate(0 25.92)"><tspan x="0" y="0">SCROLL</tspan></text>
+    <path class="cls-1" d="m6.27,59.2c18.16,13.45,36.31,26.91,54.47,40.36,18.64-13.45,37.28-26.91,55.92-40.36"/>
+    <path class="cls-1" d="m24.4,40.09c12.19,9.03,24.38,18.07,36.57,27.1,12.52-9.03,25.03-18.07,37.55-27.1"/>
+  </g>
+</svg>

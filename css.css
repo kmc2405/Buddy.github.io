@@ -5,7 +5,7 @@
     padding: 0;
 }
 body {
-    font-family: sans-serif;
+    font-family: 'Pretendard', sans-serif;
 }
 
 html {
@@ -48,13 +48,14 @@ header.active {
     animation: fadeIn_1 3s forwards;
 }
 nav.main_menu ul{
-    font-family: sans-serif;
+    font-family: 'Pretendard', sans-serif;
     list-style: none;
     text-align: right;
     padding: 30px;
 }
 nav.main_menu li {
     font-size: 1.35rem;
+    font-weight: 100;
     padding:0 20px 0 20px;
     display: inline;
     color: white;
@@ -80,8 +81,8 @@ nav.main_menu a {
     position: relative;
 }
 .section_0 p.ani_1 {
-    font-family: sans-serif;
-    font-weight: 200;
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 100;
     font-size: clamp(1rem, 5vw, 5rem);
     position: absolute;
     top: 45%;
@@ -92,12 +93,12 @@ nav.main_menu a {
     animation: fadeIn 3s forwards, slideIn 3s forwards;
 }
 .section_0 p.ani_1 span{
-    color: #576238;
-    font-weight: 700;
+    color: #FBDE66;
+    font-weight: 900;
 }
 .section_0 p.ani_2 {
-    font-family: sans-serif;
-    font-weight: 200;
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 100;
     font-size: clamp(1rem, 5vw, 5rem);
     position: absolute;
     top: 55%;
@@ -110,16 +111,16 @@ nav.main_menu a {
 }
 .section_0 p.ani_2 span{
     color: #FBDE66;
-    font-weight: 700;
+    font-weight: 900;
 }
 .section_0 .img_1 {
     position: absolute;
-    width: 35px;
+    width: 50px;
     top: 85%;
     left: 50%;
     opacity: 0;
-    animation: fadeIn 3s forwards, slideIn 3s forwards, blink 1.5s infinite;
-    animation-delay: 2s;
+    animation: fadeIn 10s forwards, slideIn 3s forwards, blink 1.5s infinite;
+    animation-delay: 3.5s;
 }
 .section_1 {
     position: relative;
@@ -129,17 +130,18 @@ nav.main_menu a {
     color: white;
     /*border: 4px solid red;*/
     text-align: center;
+    background-image: element();
 }
 .section_1 video {
     display: none;
     opacity: 0;
     margin: auto;
-    margin-top: 80px;
+    margin-top: 160px;
     text-align: center;
     animation: fadeIn 3s forwards;
 }
 .section_2 {
-    position: relative;
+   position: relative;
    width: 100%;
    height: 1080px;
 }
@@ -153,7 +155,7 @@ nav.main_menu a {
    /*border: 4px solid green;*/
    display: none;
    opacity: 0;
-   animation: fadeIn 4s forwards;
+   animation: fadeIn 2.5s forwards;
 }
 
 .section_2 p.title {
@@ -188,46 +190,294 @@ nav.main_menu a {
 
 .section_3 {
     width: 100%;
-    height: 5000px;
-    background-image: linear-gradient(to bottom, #fff 0%, #fbde66 100%);
+    height: 20000px;
+    background-image: linear-gradient(to bottom, #fff 0%, #fff 27%, #fbde66 100%);
     /*border: 3px solid blue;*/
+}
+
+.section_3 .plan {
+    width: 100%;
+    height: 2700px;
+    position: relative;
+    display: none;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
+    transition: 2s ease;
+}
+.section_3 .plan_img {
+    display: none;
+    margin-top: 400px;
+}
+.section_3 .plan .plan_1 {
+    padding: 50px;
+    opacity: 0;
+    animation: fadeIn 2s forwards, slideIn_2 3s forwards;
+    transition: 0.5s ease;
+    /*transform: scale(1);*/
+}
+.section_3 .plan .plus {
+   margin-bottom: 50px;
+   opacity: 0;
+   /*transform: scale(1);*/
+   transition: 0.5s ease;
+   animation: fadeIn 2s forwards, slideIn_2 3s forwards;
+}
+.section_3 .plan .arrow {
+    margin-top: 100px;
+    margin-bottom: 70px;
+    transition: 0.5s ease;
+ }
+.section_3 .plan .top_title {
+    font-size: clamp(1.5rem, 5vw, 1.5rem);
+    font-weight: 300;
+    padding: 30px;
+    margin-top: 50px;
+    margin-bottom: 250px;
+    color: #7d7d7d
+}
+.section_3 .plan .comment {
+    font-size: clamp(1.2rem, 5vw, 1.2rem);
+    text-align: center;
+    font-weight: 300;
+    padding: 20px;
+}
+.section_3 .plan .comment {
+    animation: fadeIn 2s forwards, slideIn_2 3s forwards;
+    transition: 1.5s ease;
+}
+.section_3 .plan .comment2 {
+    font-size: clamp(1.5rem, 5vw, 1.5rem);
+    text-align: center;
+    font-weight: 200;
+    padding: 20px;
+    /*transform: scale(1);*/
+    animation: fadeIn 2s forwards, slideIn_2 3s forwards;
+    transition: 1s ease;
+}
+.section_3 .plan .comment2 span{
+    font-weight: 700;
+}
+.section_3 .plan .comment3 {
+    font-size: clamp(1.5rem, 5vw, 1.5rem);
+    text-align: center;
+    font-weight: 200;
+    padding: 20px;
+    opacity: 1;
+    animation: fadeIn 2s forwards;
+}
+.section_3 .plan .comment4 .style_1 {
+    font-size: clamp(1.5rem, 5vw, 2.1rem);
+    font-weight: 200;
+    color: #576238;
+    opacity: 0;
+    animation: fadeIn 3s forwards, slideIn_2 3s forwards;
+    animation-delay: 0.8s;
+}
+.section_3 .plan .comment4 {
+    text-align: center;
+    padding: 20px;
+    display: none;
+    opacity: 0;
+    animation: fadeIn 4s forwards, slideIn_2 3s forwards;
+}
+.section_3 .naming {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    border: solid yellow 3px;
+    opacity: 0;
+    transition: opacity 3.2s ease; 
+}
+.section_3 .naming .top_title {
+    font-size: clamp(1.5rem, 5vw, 1.5rem);
+    font-weight: 300;
+    padding: 30px;
+    margin-top: 50px;
+    margin-bottom: 250px;
+    color: #7d7d7d;
+}
+.section_3 .naming .naming_logo {
+    position:absolute;
+    top: 46.8%;
+    left: 15%;
+}
+.section_3 .naming .naming_title {
+    position:absolute;
+    font-size: clamp(1.5rem, 5vw, 2.3rem);
+    font-weight: 700;
+    top: 39.8%;
+    left: 51%;
+}
+.section_3 .naming .naming_title span {
+    font-size: clamp(1.5rem, 5vw, 2.9rem);
+}
+.section_3 .naming .naming_title span.first {
+    font-size: clamp(1.5rem, 5vw, 3.8rem);
+}
+.section_3 .naming .naming_text {
+    position:absolute;
+    font-size: clamp(1.5rem, 5vw, 1.5rem);
+    font-weight: 200;
+    top: 49.8%;
+    left: 51%;
+}
+
+.section_3 .naming .naming_text span {
+    font-size: clamp(1.5rem, 5vw, 1.7rem);
+    font-weight: 500;
 }
 article.design_0 {
     display: none;
     text-align: center;
 }
-
 .section_3 .design_0 {
     width: 100%;
-    height: 2000px;
+    height: 800px;
     position: relative;
     /* border: solid 3px green; */
 }
 .section_3 p.title{
     margin-top: 300px;
     font-size: clamp(1rem, 5vw, 4rem);
-    font-weight: 200;
-    left: 28%;
-    top: 0.1%;
+    font-weight: 100;
     opacity: 0;
-    animation: slideIn_2 1.5s forwards, fadeIn 1.5s forwards;
+    animation: slideIn_2 2s forwards, fadeIn 2s forwards;
 }
 .section_3 p.title span{
     font-weight: 700;
 }
 .section_3 .design_0 .box {
+    position: relative;
     width: 40%;
     height: 450px;
     margin: auto;
     margin-top: 100px;
-    background: white;
+    background: rgb(255, 255, 255);
     border-radius: 3rem;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
     text-align: center;
     opacity: 0;
-    animation: slideIn_2 2s forwards, fadeIn 2s forwards;
-    animation-delay: 1.5s;
+    animation: slideIn_2 2s forwards, fadeIn 3s forwards;
+    animation-delay: 2.7s;
 }
+.section_3 .box p {
+    position: absolute;
+    padding: 40px;
+    top: 23%;
+    margin-top: auto;
+    font-size: clamp(1.25rem, 5vw, 1.25rem);
+    font-weight: 200;
+}
+.section_3 .box span {
+    font-weight: 800;
+    font-size: larger;
+    color: #ffdb4a;
+}
+#tp {
+    font-size: clamp(1rem, 5vw, 5.5rem);
+    font-weight: 900;
+    color: #576238;
+}
+
+.section_3 .keyword {
+    position: relative;
+    width: 100%;
+    height: 1080px;
+    overflow: hidden;
+    border: solid 3px blue;
+    background-image: url("./img/keyword_bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: opacity 1.5s ease;
+}
+
+.section_3 .keyword.active {
+    top: 0;
+    background-color: #576238;
+    transition: 2s ease;
+    position: -webkit-sticky;
+    position: sticky;
+    transition: 1.5s ease;
+}
+.keyword .top_title {
+    font-size: clamp(1.5rem, 5vw, 1.5rem);
+    font-weight: 300;
+    padding: 30px;
+    margin-top: 50px;
+    margin-bottom: 250px;
+    color: #cbcbcb
+}
+.keyword_1 {
+    font-size: 90px;
+    position: absolute;
+    left: 27%;
+    top: 13%;
+    opacity: 1;
+    color: rgb(225, 225, 225);
+}
+.keyword_2 {
+    font-size: 55px;
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    opacity: 1;
+    color: rgb(225, 225, 225);
+}
+.keyword_3 {
+    font-size: 80px;
+    position: absolute;
+    left: 78%;
+    top: 32%;
+    opacity: 1;
+    color: rgb(225, 225, 225);
+}
+.keyword_4 {
+    font-size: 50px;
+    position: absolute;
+    left: 42%;
+    top: 45%;
+    opacity: 1;
+    color: rgb(225, 225, 225);
+}
+.keyword_5 {
+    font-size: 40px;
+    position: absolute;
+    left: 70%;
+    top: 65%;
+    opacity: 1;
+    color: rgb(225, 225, 225);
+}
+.keyword_6 {
+    font-size: 85px;
+    position: absolute;
+    left: 22%;
+    top: 70%;
+    opacity: 1;
+    color: rgb(225, 225, 225);
+}
+.keyword_7{
+    font-size: 111px;
+    position: absolute;
+    left: 50%;
+    top: 22%;
+    opacity: 1;
+    color: rgb(225, 225, 225);
+}
+.scroll {
+  opacity: 0; /* 초기 불투명도 */
+  transition: opacity 0.5s ease; /* 오파시티 변경 효과를 위해 */
+}
+
+
+
+
+
+
+
+
+
+
 /* 키프레임 애니메이션 */
 @keyframes slideIn {
     from {
@@ -247,7 +497,7 @@ article.design_0 {
 }
 @keyframes slideIn_2 {
     from {
-        transform: translateY(35%);
+        transform: translateY(50%);
     }
 }
 @keyframes fadeIn {

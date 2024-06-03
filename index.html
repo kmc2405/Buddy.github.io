@@ -6,6 +6,8 @@
     <title>Buddy.</title>
     <link rel="stylesheet" href="./css.css">
     <link rel="icon" href="./img/web_icon.png">
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"/>
 </head>
 <body>
 <div id="wrap">
@@ -15,28 +17,28 @@
         </div>
         <nav class="main_menu">
             <ul>
-                <a href="./#" class="scroll"><li>video</li></a>
-                <a href="./#"><li>intro</li></a>
-                <a href="./#"><li>design</li></a>
-                <a href="./#"><li>service</li></a>
+                <a href="./#"><li>Promotion</li></a>
+                <a href="./#"><li>Project</li></a>
+                <a href="./#"><li>Design</li></a>
+                <a href="./#"><li>Service</li></a>
             </ul>
         </nav>
     </header> <!--header-->
     <div class="section_0">
-    <video id="bg_video" autoplay loop muted>
-        <source src="./video/intro.mp4" type="video/mp4">
-    </video>
-    <p class="ani_1">오래된 친구처럼 <span class="style_1">친근하게</span></p><br>
-    <p class="ani_2">그리고 <span class="style_2">트렌디</span>를 넘어서...</p>
-    <img class='img_1'src='./img/scroll_icon.png'>
-    </div>
+        <video id="bg_video" autoplay loop muted>
+            <source src="./video/intro.mp4" type="video/mp4">
+        </video>
+        <p class="ani_1">오래된 친구처럼 <span class="style_1">친근하게</span></p><br>
+        <p class="ani_2">그리고 <span class="style_2">트렌디</span>를 넘어서...</p>
+        <img class='img_1'src='./img/scroll_icon2.svg' width='300'>
+    </div> <!--section_0-->
     <div class="clear"></div>
 
     <div class="section_1">
-        <video width="1600" height="900" controls muted>
-            <source src="./video/intro.mp4" type="video/mp4">
+        <video width="1600" height="900" autoplay loop muted>
+            <source src="./video/intro_1.mp4" type="video/mp4">
         </video>
-    </div>
+    </div> <!--section_1-->
     <div class="clear"></div>
 
     <div class="section_2">
@@ -46,20 +48,60 @@
         <p> 트렌디 시니어 서비스는 당신의 소중한 시간을 더욱 가치 있게 만듭니다.<br>
             오랜 세월 쌓아온 지혜와 경험을 바탕으로 새로운 도전과 즐거움을 선사합니다.<br>
             건강과 행복을 최우선으로 고려한 맞춤형 프로그램, 최신 트렌드를 반영한 라이프스타일 제안,<br>
-            그리고 당신의 이야기를 존중하는 따뜻한 소통.</p>
+            그리고 당신의 이야기를 존중하는 따뜻한 소통, 지금 바로 만나보세요!</p>
         </div>
-    </div>
+    </div> <!--section_2-->
     <div class="clear"></div>
+
     <div class="section_3">
-        <article class="design_0">
-        <p class="title">"트렌디함을 넘어서 이젠 <span>독창적인</span>"</p>
-        <div class="box">
-            <p>text   text   text   text   text   text   text</p>
-        </div>
+        <article class="plan">
+                <p class='top_title'>| Background</p>
+                <p class='comment'>“<span class='tp_1'></span>”</p>
+                <p class='comment'>“<span class='tp_2'></span>”</p>
+                <p class='comment'>“<span class='tp_3'></span>”</p>
+                <p class='comment'>“<span class='tp_4'></span>”</p>
+            <div class='plan_img'>
+                <p class='comment'><img class='plan_1' src="./img/plan_1.svg" width='900'></p>
+                <p class='comment'><img class='plus' src="./img/plus.svg" width='70'></p>
+                <p class='comment2'><span>시장 기회</span></p>
+                <p class='comment2'>&</p>
+                <p class='comment2'><span>주 타겟인 시니어들의 고충</span></p>
+                <p class='comment3'><img class='arrow' src="./img/arrow.svg" width='70'></p>
+                <p class='comment4'><img class='plan_logo' src="./img/logo.svg" width='300'></p>
+                <p class='comment4'><span class='style_1'>“시니어를 위한 트렌드 지침서 & 라이프 스타일 구축 서비스 제공”</span></p>
+            </div>
+            </article>
+            <article class="naming">
+                <p class='top_title'>| Naming</p>
+                <img class='naming_logo'src='./img/logo_black.png' width='400'>
+                <p class='naming_title'><span class='first'>왜? </span> <span>"Buddy."</span> 인 것인가</p>
+                <p class='naming_text'><span>동료, 단짝, 형제</span>라는 뜻으로, "Buddy"는 "Friend"보다 격식이 낮아<br> 훨씬 더 친근감 있는 표현입니다.<br><br>
+                    주 사용자인 시니어분들이 이 앱을 친구처럼 편하게 쓰길 바라고 또<br> 자주 애용해줬으면 하는 바램으로 <span>"Buddy"</span>라는 이름을 붙였습니다.
+                    </p>
+            </article>
+            <article class="design_0">
+            <p class="title">트렌디함을 넘어서 이젠 <span id='tp'></span></p>
+            <p id='element'></p>
+            <div class="box">
+                <p><span>Buddy.</span>는 뉴스, 트렌드, 플렌, 헬스 총 4가지의 기능과 함께 시니어분들께서 보다 더 편리하고
+                    유용한 정보들을 쉽게 접근 할 수 있도록 설계된 앱 서비스입니다.<br><br>
+                    시니어분들을 위한 여러 트렌드 관련 정보를 제공해줄 뿐만 아니라 본인 스스로<br> 정보를 선택 할 수 있도록 유도하고,
+                    본인 맞춤형으로<br> 라이프 스타일을 구축 할 수 있도록 도와드립니다.
+                </p>
+            </div>
         </article>
-    </div>
-</div>
-</div>
+        <article class="keyword">
+            <p class='top_title'>| Keyword</p>
+            <p class='scroll keyword_1'>친근한</p>
+            <p class='scroll keyword_2'>재미있는</p>
+            <p class='scroll keyword_3'>트렌디</p>
+            <p class='scroll keyword_4'>스마트 시니어</p>
+            <p class='scroll keyword_5'>평생학습</p>
+            <p class='scroll keyword_6'>라이프 스타일</p>
+            <p class='scroll keyword_7'>편리하게</p>
+        </article>
+    </div> <!--section_3-->
+</div> <!--main-->
 
 
 
@@ -68,8 +110,8 @@
 
 </footer>
 
-<script src="./js.js">
-</script>
+<script src="./js.js"></script>
+<script src="./typing.js"></script>
 
 
 </body>
