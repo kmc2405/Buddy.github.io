@@ -35,7 +35,7 @@
     <div class="clear"></div>
 
     <div class="section_1">
-        <video width="1600" height="900" autoplay loop muted>
+        <video width="1600" height="900" controls muted>
             <source src="./video/intro_1.mp4" type="video/mp4">
         </video>
     </div> <!--section_1-->
@@ -45,9 +45,9 @@
         <div id="bg_img">
         <p class="title">"지혜와 경험이 꽃피는 황금기,<br>
                 <span>당신의 삶을 더욱 찬란하게!"</span></p>
-        <p> 트렌디 시니어 서비스는 당신의 소중한 시간을 더욱 가치 있게 만듭니다.<br>
-            오랜 세월 쌓아온 지혜와 경험을 바탕으로 새로운 도전과 즐거움을 선사합니다.<br>
-            건강과 행복을 최우선으로 고려한 맞춤형 프로그램, 최신 트렌드를 반영한 라이프스타일 제안,<br>
+        <p> 트렌디 시니어 서비스는 당신의 소중한 시간을 더욱 가치 있게 만듭니다.<br><br>
+            오랜 세월 쌓아온 지혜와 경험을 바탕으로 새로운 도전과 즐거움을 선사합니다.<br><br>
+            건강과 행복을 최우선으로 고려한 맞춤형 프로그램, 최신 트렌드를 반영한 라이프스타일 제안,<br><br>
             그리고 당신의 이야기를 존중하는 따뜻한 소통, 지금 바로 만나보세요!</p>
         </div>
     </div> <!--section_2-->
@@ -56,20 +56,24 @@
     <div class="section_3">
         <article class="plan">
                 <p class='top_title'>| Background</p>
-                <p class='comment'>“<span class='tp_1'></span>”</p>
-                <p class='comment'>“<span class='tp_2'></span>”</p>
-                <p class='comment'>“<span class='tp_3'></span>”</p>
-                <p class='comment'>“<span class='tp_4'></span>”</p>
+                <div class="persona_box"><img class='persona' src='./img/persona_1.svg'></div>
+                <div class="persona_box"><img class='persona' src='./img/persona_2.svg'></div>
+                <div id="align">
+                <p class='comment'>“내 나이 65세, 정년 퇴임 이후 뭔가 이루고 싶어도 <span class='tp_1'></span>”</p>
+                <p class='comment'>“젊을 때는 일이 바빠서 몰랐는데 <span class='tp_2'></span>”</p>
+                <p class='comment'>“나처럼 나이 든 사람에게 맞는 정보 찾기란 <span class='tp_3'></span>”</p>
+                <p class='comment'>“퇴직 하고 나니 시간도 많이 생겼는데 무엇을 해야 할 지 <span class='tp_4'></span>”</p>
+                </div>
             <div class='plan_img'>
-                <p class='comment'><img class='plan_1' src="./img/plan_1.svg" width='900'></p>
+                <div class="circle"><p>인구 고령화</p></div>
+                <div class="circle"><p>디지털 격차</p></div>
+                <div class="circle"><p>사회적 고립</p></div>
+                <div class="circle"><p>개인별 맞춤화의 중요성</p></div>
                 <p class='comment'><img class='plus' src="./img/plus.svg" width='70'></p>
-                <p class='comment2'><span>시장 기회</span></p>
-                <p class='comment2'>&</p>
-                <p class='comment2'><span>주 타겟인 시니어들의 고충</span></p>
-                <p class='comment3'><img class='arrow' src="./img/arrow.svg" width='70'></p>
-                <p class='comment4'><img class='plan_logo' src="./img/logo.svg" width='300'></p>
-                <p class='comment4'><span class='style_1'>“시니어를 위한 트렌드 지침서 & 라이프 스타일 구축 서비스 제공”</span></p>
-            </div>
+                <div class="circle2"><p>시장 기회</p></div>
+                <div class="circle2"><p>시니어의 고충</p></div>
+                <p class='comment3'><img class='arrow' src="./img/arrow.svg" width='150'></p>
+                <p class='comment4'><img class='plan_logo' src="./img/title.svg" width='700'></p>
             </article>
             <article class="naming">
                 <p class='top_title'>| Naming</p>
@@ -79,36 +83,125 @@
                     주 사용자인 시니어분들이 이 앱을 친구처럼 편하게 쓰길 바라고 또<br> 자주 애용해줬으면 하는 바램으로 <span>"Buddy"</span>라는 이름을 붙였습니다.
                     </p>
             </article>
+            <article class="keyword">
+                <p class='top_title'>| Keyword</p>
+                <div class='scroll keyword_1'>
+                    <div class="circle_k"><p>쉽고</p></div>
+                    <div class="circle_k"><p>재미있는</p></div>
+                    <div class="circle_k"><p>친근한</p></div>
+                    <div class="circle_k"><p>시니어 자기계발</p></div>
+                    <div class="circle_k"></div>
+                </div>
+                <div class='scroll keyword_2'>
+                    <div class="circle_k"><p>스마트 시니어</p></div>
+                    <div class="circle_k"><p>라이프 스타일</p></div>
+                    <div class="circle_k"><p>친구처럼</p></div>
+                    <div class="circle_k"><p>평생 학습</p></div>
+                    <div class="circle_k"></div>
+                </div>
+                <div class='scroll keyword_3'>
+                    <div class="circle_k"><p>액티브 시니어</p></div>
+                    <div class="circle_k"><p>시니어 패션</p></div>
+                    <div class="circle_k"><p>시니어 문화 활동</p></div>
+                    <div class="circle_k"><p>시니어 패션 팁</p></div>
+                    <div class="circle_k"></div>
+                </div>
+                <div class='scroll keyword_4'>
+                    <div class="circle_k"><p>시니어 취업</p></div>
+                    <div class="circle_k"><p>시니어 은퇴</p></div>
+                    <div class="circle_k"><p>시니어 콘텐츠</p></div>
+                    <div class="circle_k"><p>시니어 IT</p></div>
+                    <div class="circle_k"></div>
+                </div>
+                <!--<div class='scroll keyword_5'>
+                    <div class="circle_k"></div>
+                    <div class="circle_k"></div>
+                    <div class="circle_k"></div>
+                    <div class="circle_k"></div>
+                    <div class="circle_k"></div>
+                </div>
+                <div class='scroll keyword_6'>
+                    <div class="circle_k"></div>
+                    <div class="circle_k"></div>
+                    <div class="circle_k"></div>
+                    <div class="circle_k"></div>
+                    <div class="circle_k"></div>
+                </div> -->
+            </article>
             <article class="design_0">
             <p class="title">트렌디함을 넘어서 이젠 <span id='tp'></span></p>
             <p id='element'></p>
             <div class="box">
                 <p><span>Buddy.</span>는 뉴스, 트렌드, 플렌, 헬스 총 4가지의 기능과 함께 시니어분들께서 보다 더 편리하고
-                    유용한 정보들을 쉽게 접근 할 수 있도록 설계된 앱 서비스입니다.<br><br>
-                    시니어분들을 위한 여러 트렌드 관련 정보를 제공해줄 뿐만 아니라 본인 스스로<br> 정보를 선택 할 수 있도록 유도하고,
+                    유용한 정보들을 쉽게 접근 할 수 있도록 설계된 앱 서비스입니다.<br><br><br>
+                    시니어분들을 위한 여러 트렌드 관련 정보를 제공해줄 뿐만 아니라<br> 본인 스스로 정보를 선택 할 수 있도록 유도하고,
                     본인 맞춤형으로<br> 라이프 스타일을 구축 할 수 있도록 도와드립니다.
                 </p>
             </div>
+            </article>
         </article>
-        <article class="keyword">
-            <p class='top_title'>| Keyword</p>
-            <p class='scroll keyword_1'>친근한</p>
-            <p class='scroll keyword_2'>재미있는</p>
-            <p class='scroll keyword_3'>트렌디</p>
-            <p class='scroll keyword_4'>스마트 시니어</p>
-            <p class='scroll keyword_5'>평생학습</p>
-            <p class='scroll keyword_6'>라이프 스타일</p>
-            <p class='scroll keyword_7'>편리하게</p>
-        </article>
+        
     </div> <!--section_3-->
-</div> <!--main-->
+    <div class="clear"></div>
+    <div class="section_4">
+        <div class="design_1">
+        <article class="font">
+            <p class='top_title'>| Design</p>
+            <p class='design_font'>Font</p>
+            <div class="circle1"><p class='p1'>타이틀 & 본문용</p></div>
+            <img class='font_img1' src='./img/font.svg' width='500'>
+            <div class="circle2"><p class='p1'>로고</p></div>
+            <img class='font_img2'src='./img/font_logo.svg' width='500'>
+            <div class="font_box"><p class='font_t'>프리텐다드만의 고유한 깔끔함을 타이틀과 본문용에 사용을 했고,<br><br>
+                            210 수퍼사이즈의 둥글둥글하고 통통 튀는 매력을 로고에 담아보았습니다.</p>
+        </article>
+        </div>
+        <div class="design_2">
+            <article class="color">
+                <p class='design_font2'>Color</p>
+                <img class='font_img1' src='./img/colorchip.svg' width='1100'>
+                <p class='font_t2'>주 사용자이신 시니어들이 편하게 즐기실 수 있도록 깔끔하고 차분한 컬러 세가지<br><br>  
+                    화이트,머드색과 가까운 그린, 마차색에 가까운 그린 이 두가지를 사용했습니다.<br><br>    
+                    또 귀여운 매력으로 사용자들이 친근하게 느낄 수 있도록 노란색을 같이 사용하여<br><br>  
+                    앱의 분위기를 한층 더 따뜻하고 밝게 만들어주었습니다.</p>
+            </article>
+        </div>
+        <div class="design_3">
+            <article class="icon">
+                <p class='design_font'>Icon</p>
+                <img class='icon_img' src='./img/icon1.svg' width='170'>
+                <img class='icon_img' src='./img/icon2.svg' width='170'>
+                <img class='icon_img' src='./img/icon3.svg' width='170'>
+                <img class='icon_img' src='./img/icon4.svg' width='170'>
+                <img class='icon_img' src='./img/icon5.svg' width='170'>
+            </article>
+        <div class="design_4">
+            <img class='frame' src='./img/frames.svg' width='1800'>
+            <img class='design_logo' src='./img/design_logo.svg' width='500'>
+        </div>
+    </div> <!--section_4-->
+    <div class="clear"></div>
+    <div class="section_5">
+    <img class='service_box' src='./img/service_box1.svg' width='1400'>
+    </div>
+    <div class="section_5">
+        <img class='service_box' src='./img/service_box2.svg' width='1400'>
+    </div>
+    <div class="section_5">
+        <img class='service_box' src='./img/service_box3.svg' width='1400'>
+    </div>
+    <div class="section_5">
+        <img class='service_box' src='./img/service_box4.svg' width='1400'>
+    </div>
+    <div class="section_5">
+        <img class='team' src='./img/team.svg' width='1300'>
+    </div>
+     <!--section_5-->
 
-
-
-
+</div> <!--wrap-->
 <footer>
-
 </footer>
+
 
 <script src="./js.js"></script>
 <script src="./typing.js"></script>

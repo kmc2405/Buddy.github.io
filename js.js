@@ -19,6 +19,7 @@ window.addEventListener('scroll', () => {
     let img1 = document.querySelector('.plan_1');
     let img2 = document.querySelector('.plus');
     let img3 = document.querySelectorAll('.comment2');
+
     let scrollTop2 = window.pageYOffset || document.documentElement.scrollTop;
     let scaleValue = Math.max(1 - (scrollTop2 - 4270) / 420, 0);
 
@@ -72,7 +73,7 @@ window.addEventListener('scroll', () => {
         planImg.style.display = "none";
     }
 
-    if(scrollTop > 4270) {
+    /*if(scrollTop > 4270) {
         document.addEventListener('scroll', function() {
             img1.style.transform = `scale(${scaleValue})`;
             img2.style.transform = `scale(${scaleValue})`;
@@ -86,7 +87,7 @@ window.addEventListener('scroll', () => {
             img3.forEach((item) => {
                 item.style.transform = 'scale(1)';
             });
-      }
+      }*/
 
     if(scrollTop >= 4100) {
         comment4.forEach((item) => {
@@ -168,69 +169,42 @@ window.addEventListener('scroll', () => {
             let keyword6 = document.querySelector('.keyword_6');
             let keyword7 = document.querySelector('.keyword_7');
 
-              if (scrollTop3 >= 8200 && scrollTop3 <= 9500) {
-                let opacity = (scrollTop3 - 8200) / (9500 - 8200);
+              if (scrollTop3 >= 8619 && scrollTop3 <= 10500) {
+                let opacity = (scrollTop3 - 8619) / (9900 - 8619);
                 keyword1.style.opacity = opacity;
-              } else if (scrollTop3 < 8200) {
+              } else if (scrollTop3 < 8619) {
                 keyword1.style.opacity = 0;
               } else {
                 keyword1.style.opacity = 1;
               }
 
-              if (scrollTop3 >= 8750 && scrollTop3 <= 9300) {
-                let opacity = (scrollTop3 - 8750) / (9300 - 8750);
+              if (scrollTop3 >= 9500 && scrollTop3 <= 10800) {
+                let opacity = (scrollTop3 - 9500) / (10800 - 9500);
                 keyword2.style.opacity = opacity;
-              } else if (scrollTop3 < 8750) {
+              } else if (scrollTop3 < 9500) {
                 keyword2.style.opacity = 0;
               } else {
                 keyword2.style.opacity = 1;
               }
 
-              if (scrollTop3 >= 9500 && scrollTop3 <= 10800) {
-                let opacity = (scrollTop3 - 9500) / (10800 - 9500);
+              if (scrollTop3 >= 10800 && scrollTop3 <= 12100) {
+                let opacity = (scrollTop3 - 10800) / (12100 - 10800);
                 keyword3.style.opacity = opacity;
-              } else if (scrollTop3 < 9500) {
+              } else if (scrollTop3 < 10800) {
                 keyword3.style.opacity = 0;
               } else {
                 keyword3.style.opacity = 1;
               }
 
-              if (scrollTop3 >= 8300 && scrollTop3 <= 16000) {
-                let opacity = (scrollTop3 - 8300) / (16000 - 8300);
-                let scale = 1 + (scrollTop3 - 8300) / (4800);
+              if (scrollTop3 >= 12100 && scrollTop3 <= 13400) {
+                let opacity = (scrollTop3 - 12100) / (13400 - 11700);
+                //let scale = 1 + (scrollTop3 - 11700) / (4800);
                 keyword4.style.opacity = opacity;
-                keyword4.style.transform = `scale(${scale})`;
-              } else if (scrollTop3 < 8300) {
+                //keyword4.style.transform = `scale(${scale})`;
+              } else if (scrollTop3 < 12100) {
                 keyword4.style.opacity = 0;
               } else {
                 keyword4.style.opacity = 1;
-              }
-
-              if (scrollTop3 >= 10100 && scrollTop3 <= 12500) {
-                let opacity = (scrollTop3 - 10100) / (12500 - 10100);
-                keyword5.style.opacity = opacity;
-              } else if (scrollTop3 < 10100) {
-                keyword5.style.opacity = 0;
-              } else {
-                keyword5.style.opacity = 1;
-              }
-
-              if (scrollTop3 >= 12100 && scrollTop3 <= 14000) {
-                let opacity = (scrollTop3 - 12100) / (14000 - 12100);
-                keyword6.style.opacity = opacity;
-              } else if (scrollTop3 < 12100) {
-                keyword6.style.opacity = 0;
-              } else {
-                keyword6.style.opacity = 1;
-              }
-
-              if (scrollTop3 >= 10500 && scrollTop3 <= 15500) {
-                let opacity = (scrollTop3 - 10500) / (15500 - 10500);
-                keyword7.style.opacity = opacity;
-              } else if (scrollTop3 < 10500) {
-                keyword7.style.opacity = 0;
-              } else {
-                keyword7.style.opacity = 1;
               }
 
         })
