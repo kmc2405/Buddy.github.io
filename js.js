@@ -23,16 +23,16 @@ window.addEventListener('scroll', () => {
     let scrollTop2 = window.pageYOffset || document.documentElement.scrollTop;
     let scaleValue = Math.max(1 - (scrollTop2 - 4270) / 420, 0);
 
+    let circles = document.querySelectorAll('.circle');
+    let circles2 = document.querySelectorAll('.circle2');
 
     if(scrollTop >= 950) {
-        logoImg.src = "./img/logo_yellow.png";
         header.classList.add('active');
         menu.forEach(item => {
             item.classList.add('active')
         })
     }
     else if(scrollTop <= 950) {
-        logo_img.src = "./img/logo.png"
         header.classList.remove('active');
         menu.forEach(item => {
             item.classList.remove('active')
@@ -57,7 +57,13 @@ window.addEventListener('scroll', () => {
     else if(scrollTop <= 1900) {
         plan.style.display = "none";
     }
+    if(scrollTop >= 2192) {
+      logoImg.src = "./img/logo_green.svg";  
+    }
 
+    else if(scrollTop <= 2192) {
+      logoImg.src = "./img/logo.svg";;
+    }
     if(scrollTop >= 2950) {
         article1.style.display = "block";
         
@@ -105,22 +111,33 @@ window.addEventListener('scroll', () => {
     else if(scrollTop <= 5000) {
         article3.style.opacity = 0;
     }
+    if(scrollTop >= 6100) {
+      circles.forEach(item => {
+        item.classList.add('active')
+    })
+    }
+    else if(scrollTop <= 6000) {
+      circles.forEach(item => {
+        item.classList.remove('active')
+    })
+    }
+    if(scrollTop >= 6350) {
+      circles2.forEach(item => {
+        item.classList.add('active')
+    })
+    }
+    else if(scrollTop <= 6250) {
+      circles2.forEach(item => {
+        item.classList.remove('active')
+    })
+    }
     if(scrollTop >= 7800) {
         section3.classList.add('active');
         section3.style.opacity = 1;
     }
-    else if(scrollTop <= 7400) {
+    if(scrollTop >= 13890) {
         section3.style.opacity = 0;
-    }
-    if(scrollTop >= 17000) {
-        section3.style.opacity = 0;
-    }
-
-    if(scrollTop >= 17400) {
-        logoImg.src = "./img/logo_black.png";
-    }
-    
-    
+    }       
 })
 
 // 스크롤 애니메이션
@@ -165,9 +182,6 @@ window.addEventListener('scroll', () => {
             let keyword2 = document.querySelector('.keyword_2');
             let keyword3 = document.querySelector('.keyword_3');
             let keyword4 = document.querySelector('.keyword_4');
-            let keyword5 = document.querySelector('.keyword_5');
-            let keyword6 = document.querySelector('.keyword_6');
-            let keyword7 = document.querySelector('.keyword_7');
 
               if (scrollTop3 >= 8619 && scrollTop3 <= 10500) {
                 let opacity = (scrollTop3 - 8619) / (9900 - 8619);
