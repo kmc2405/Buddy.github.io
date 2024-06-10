@@ -1,30 +1,79 @@
+// 네비게이션 메뉴 이벤트
+let menu = document.querySelectorAll('.scroll_link')
+menu.forEach((item) => {
+  item.addEventListener('click', (event) => {
+      if(event.target.classList.contains('link_1')) {
+          window.scrollTo({
+            top: 990,
+            behavior: 'smooth'
+          });
+      }
+      else if(event.target.classList.contains('link_2')) {
+          window.scrollTo({
+            top: 2150, 
+            behavior: 'smooth'
+          });
+      }
+      else if(event.target.classList.contains('link_3')) {
+          window.scrollTo({
+            top: 14390, 
+            behavior: 'smooth'
+          });
+      }
+      else if(event.target.classList.contains('link_4')) {
+        window.scrollTo({
+          top: 22200, 
+          behavior: 'smooth'
+        });
+    }
+  })
+})
+  /*links.forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+        const targetId = this.getAttribute('data-target');
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+}); */
 // 스크롤 이벤트
 window.addEventListener('scroll', () => {
     let scrollTop = window.scrollY;
-    let logoImg = document.getElementById('logo_img')
-    let header = document.querySelector('header')
+    let logoImg = document.getElementById('logo_img');
+    let header = document.querySelector('header');
     let menu = document.querySelectorAll('li')
 
-    let bgImg = document.getElementById('bg_img')
-    let intro = document.querySelector('.section_1 video')
-    let article1 = document.querySelector('article.design_0')
-    let article2 = document.querySelector('article.plan')
-    let article3 = document.querySelector('article.naming')
-    let plan = document.querySelector('.plan')
-    let planImg = document.querySelector('.plan_img')
-    let comment4 = document.querySelectorAll('.comment4')
-    let section3 = document.querySelector('.section_3 .keyword')
+    let bgImg = document.getElementById('bg_img');
+    let article1 = document.querySelector('article.design_0');
+    let article2 = document.querySelector('article.plan');
+    let article3 = document.querySelector('article.naming');
+    let plan = document.querySelector('.plan');
+    let planImg = document.querySelector('.plan_img');
+    let comment4 = document.querySelectorAll('.comment4');
+    let section3 = document.querySelector('.section_3 .keyword');
+    let section4 = document.querySelector('.section_4')
+    let section5 = document.querySelector('.section_5')
     console.log(scrollTop);
 
-    let img1 = document.querySelector('.plan_1');
-    let img2 = document.querySelector('.plus');
-    let img3 = document.querySelectorAll('.comment2');
-
+    let img1 = document.querySelector('.plan_logo');
+    let news = document.querySelector('.news');
+    let trend = document.querySelector('.trend');
+    let health = document.querySelector('.health');
+    let planner = document.querySelector('.planner');
+    
     let scrollTop2 = window.pageYOffset || document.documentElement.scrollTop;
-    let scaleValue = Math.max(1 - (scrollTop2 - 4270) / 420, 0);
+    let scaleValue = Math.max(1 - (scrollTop2 - 7253) / 500, 0);
 
     let circles = document.querySelectorAll('.circle');
     let circles2 = document.querySelectorAll('.circle2');
+    let frame = document.querySelector('.frame')
 
     if(scrollTop >= 950) {
         header.classList.add('active');
@@ -37,12 +86,6 @@ window.addEventListener('scroll', () => {
         menu.forEach(item => {
             item.classList.remove('active')
         })
-    }
-    if(scrollTop >= 600) {
-        intro.style.display = "block";
-    }
-    else if(scrollTop <= 300) {
-        intro.style.display = "none";
     }
     if(scrollTop >= 1100) {
         bg_img.style.display = "block";
@@ -64,6 +107,14 @@ window.addEventListener('scroll', () => {
     else if(scrollTop <= 2192) {
       logoImg.src = "./img/logo.svg";;
     }
+    if(scrollTop >= 2400) {
+      section3.style.opacity = 1; 
+    }
+
+    else if(scrollTop <= 1641) {
+      section3.style.opacity = 0;
+    }
+ 
     if(scrollTop >= 2950) {
         article1.style.display = "block";
         
@@ -79,22 +130,11 @@ window.addEventListener('scroll', () => {
         planImg.style.display = "none";
     }
 
-    /*if(scrollTop > 4270) {
+    if(scrollTop > 7253) {
         document.addEventListener('scroll', function() {
-            img1.style.transform = `scale(${scaleValue})`;
-            img2.style.transform = `scale(${scaleValue})`;
-            img3.forEach((item) => {
-                item.style.transform = `scale(${scaleValue})`;
-            }) 
+          img1.style.transform = `scale(${scaleValue})`;
           }); 
-    } else {
-            img1.style.transform = 'scale(1)';
-            img2.style.transform = 'scale(1)';
-            img3.forEach((item) => {
-                item.style.transform = 'scale(1)';
-            });
-      }*/
-
+    }
     if(scrollTop >= 4100) {
         comment4.forEach((item) => {
             item.style.display = "block";
@@ -113,22 +153,22 @@ window.addEventListener('scroll', () => {
     }
     if(scrollTop >= 6100) {
       circles.forEach(item => {
-        item.classList.add('active')
+        item.classList.add('active');
     })
     }
     else if(scrollTop <= 6000) {
       circles.forEach(item => {
-        item.classList.remove('active')
+        item.classList.remove('active');
     })
     }
     if(scrollTop >= 6350) {
       circles2.forEach(item => {
-        item.classList.add('active')
+        item.classList.add('active');
     })
     }
     else if(scrollTop <= 6250) {
       circles2.forEach(item => {
-        item.classList.remove('active')
+        item.classList.remove('active');
     })
     }
     if(scrollTop >= 7800) {
@@ -137,7 +177,49 @@ window.addEventListener('scroll', () => {
     }
     if(scrollTop >= 13890) {
         section3.style.opacity = 0;
-    }       
+    }
+    if(scrollTop >= 14034) {
+      section4.style.opacity = 1;
+    }
+    else if(scrollTop <= 14034) {
+      section4.style.opacity = 0;
+    }
+    if(scrollTop >= 18240) {
+      frame.classList.add('active');
+    }
+    else if(scrollTop <= 18240) {
+      frame.classList.remove('active');
+    }
+    if(scrollTop >= 21672) {
+      section5.style.opacity = 1;
+    }
+    else if(scrollTop <= 21672) {
+      section5.style.opacity = 0;
+    }
+    if(scrollTop >= 22707) {
+      news.style.opacity = 1;
+    }
+    else if(scrollTop <= 22707) {
+      news.style.opacity = 0;
+    }
+    if(scrollTop >= 23958) {
+      trend.style.opacity = 1;
+    }
+    else if(scrollTop <= 23958) {
+      trend.style.opacity = 0;
+    }
+    if(scrollTop >= 24968) {
+      health.style.opacity = 1;
+    }
+    else if(scrollTop <= 24968) {
+      health.style.opacity = 0;
+    }
+    if(scrollTop >= 26322) {
+      planner.style.opacity = 1;
+    }
+    else if(scrollTop <= 26322) {
+      planner.style.opacity = 0;
+    }
 })
 
 // 스크롤 애니메이션
@@ -152,15 +234,6 @@ window.addEventListener('scroll', () => {
     
         let scrollRate = length2/imgHeight * 100;
 
-        /* plan_img 스케일 
-        let parentDiv = document.querySelector('.plan_img');
-        let viewportHeight = window.innerHeight;
-        let length = arrowImg.getBoundingClientRect().top;
-        let 스크롤이넘어간정도 = viewportHeight - length;
-        let imgHeight = arrowImg.clientHeight;
-    
-        let scrollRate = 스크롤이넘어간정도/imgHeight * 100;*/
-
         if(length2/imgHeight * 100 <0){
             scrollRate = 0;
         }else if(length2/imgHeight * 100 > 100){
@@ -168,7 +241,6 @@ window.addEventListener('scroll', () => {
         }
         console.log(scrollRate);
 
-        /*const childDiv = document.querySelector('.child_div');*/
         arrowImg.style.transform = `scale(${scrollRate/100})`;
     }
 

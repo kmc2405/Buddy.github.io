@@ -66,8 +66,12 @@ nav.main_menu li.active {
 }
 nav.main_menu a {
     text-decoration: none;
+    cursor: pointer;
 }
 
+nav.main_menu a:hover{
+    color: #576382
+}
 /* Main */
 .section_0 video#bg_video {
     width: 100%;
@@ -135,13 +139,11 @@ nav.main_menu a {
     text-align: center;
     background-image: element();
 }
-.section_1 video {
-    display: none;
-    opacity: 0;
-    margin: auto;
-    margin-top: 160px;
-    text-align: center;
-    animation: fadeIn 3s forwards;
+.section_1 iframe{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .section_2 {
    position: relative;
@@ -226,7 +228,7 @@ nav.main_menu a {
     display: none;
     opacity: 0;
     animation: fadeIn 3.5s forwards;
-    transition: 2s ease;
+    transition: 0.5s ease;
 }
 .section_3 .plan_img {
     text-align: center;
@@ -361,7 +363,6 @@ nav.main_menu a {
     font-size: clamp(1.5rem, 5vw, 2.1rem);
     font-weight: 200;
     color: #576238;
-    opacity: 0;
     animation: fadeIn 3s forwards, slideIn_2 3s forwards;
     animation-delay: 0.8s;
 }
@@ -518,6 +519,7 @@ nav.main_menu a {
     width: 100%;
     height: 5500px;
     top: 45%;
+    transition: 2s ease;
     /*border: 5px solid red;*/
 }
 .section_4 .top_title{
@@ -645,6 +647,12 @@ nav.main_menu a {
 .section_4 .design_4 .frame {
     margin-top: 200px;
     width: 100%;
+    display: none;
+    opacity: 0;
+    animation: slideIn3 2s forwards, fadeIn 2s forwards;
+}
+.section_4 .design_4 .frame.active {
+    display: block;
 }
 .section_5 {
     position: relative;
@@ -652,6 +660,7 @@ nav.main_menu a {
     height: 1000px;
     margin-top: 500px;
     /*border: solid 3px blue;*/
+    transition: 0.5s ease;
 }
 article.design_0 {
     display: none;
@@ -717,31 +726,23 @@ article.design_0 {
     padding: 400px;
     z-index: 0;
 }
-article.team_section {
-    position: relative;
-    text-align: center;
-    width: 100%;
-    height: 1000px;
-   /* border: solid 5px red; */
-    overflow: hidden;
-}
-.team_section .team {
-    position: absolute;
-    top: 56%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 999;
-}
-.team_section .team2 {
-    position: absolute;
-    top:80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 article.menu_intro {
 width: 100%;
 height: 1300px;
 text-align: center;
+transition: 0.5s ease;
+}
+.news {
+transition: 0.5s ease;
+}
+.trend {
+transition: 0.5s ease;
+}
+.health {
+transition: 0.5s ease;
+}
+.planner {
+transition: 0.5s ease;
 }
 article.video {
     position: relative;
@@ -834,6 +835,14 @@ footer {
 }
 @keyframes slideIn_2 {
     from {
+        transform: translateY(0%);
+    }
+}
+@keyframes slideIn3 {
+    from {
+        transform: translateY(50%);
+    }
+    to {
         transform: translateY(0%);
     }
 }
